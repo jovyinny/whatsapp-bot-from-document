@@ -22,7 +22,7 @@ Once you've followed the above procedures you're ready to start the integration.
 
 1. Create  project directory
 
-Lets create our project directory/folder. We are going to make a folder named `whatsapp bot`.
+Lets create our project directory/folder. We are going to make a folder named `whatsapp bot`. You can view our basic [project structure](#project-structure)
 
     ```bash
     mkdir "Whatsapp bot"
@@ -110,6 +110,23 @@ Navigate to your whatsapp cloud account --> `configuration` --> edit --> then pa
 After veryfing and saving whatsapp webook, navigate to webhook fields --> click `manage` to subscribe to `message` topic.
 
 ![Webhook fields subscription](./img/webhook_subscription.png)
+
+## Project Structure
+
+Here is our basic project structure. Please upload your documents in `documents` folder before firing the project.
+
+```bash
+└── Whatsapp bot
+    └── mybot(virtual env)
+    └── whatsapp-bot-from-document
+        ├── documents
+        │   └── sample.txt
+        ├── index
+        │   └── index.json
+        ├── main.py
+        ├── README.md
+        └── requirements.txt
+```
 
 ## Sample bot test
 
