@@ -49,12 +49,12 @@ service_context = ServiceContext.from_defaults(llm_predictor=llm_predictor)
 index = GPTSimpleVectorIndex.from_documents(documents, service_context=service_context)
 
 # save index
-index.save_to_disk("index.json")
+index.save_to_disk("index/index.json")
 
 # load saved index
-index = GPTSimpleVectorIndex.load_from_disk("index.json")
+index = GPTSimpleVectorIndex.load_from_disk("index/index.json")
 
-#custom function 
+#custom respond function 
 
 def respond(query_str:str):
   QA_PROMPT_TMPL = (
@@ -85,7 +85,7 @@ def hook():
 
   # get message update.. we want only to work with text only
   data = request.get_json()
-  logging.info("Received data: $s")
+  logging.info("Received data: %s",data)
   changed_field = messenger.changed_field(data)
   
   if changed_field == "messages":
@@ -97,7 +97,7 @@ def hook():
       if message_type == "text":
         message = messenger.get_message(data)
         response=respond(message)
-        logging.info(f"\nAnswer: {response}\n")
+        logging.info("\nResponse: %s\n",response)
         messenger.send_message(message=f"{response}",recipient_id=mobile)
       else:
         messenger.send_message(message="Please send me text messages",recipient_id=mobile)
@@ -106,4 +106,4 @@ def hook():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(port=5000,debug=True)

@@ -1,0 +1,7 @@
+"We can only see a short distance ahead, but we can see plenty there that needs to be done.” – Alan Turing"
+
+"It's not at all important to get it right the first time. It's vitally important to get it right the last time"
+
+"As soon as we started programming, we found to our surprise that it wasn't as easy to get programs right as we had thought. Debugging had to be discovered. I can remember the exact instant when I realized that a large part of my life from then on was going to be spent in finding mistakes in my own programs.” – Maurice Wilkes"
+
+"Human beings are not accustomed to being perfect, and few areas of human activity demand it. Adjusting to the requirement for perfection is, I think, the most difficult part of learning to program.” – Fred Brooks"
