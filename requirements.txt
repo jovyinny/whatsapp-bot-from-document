@@ -1,5 +1,8 @@
-python-dotenv==1.1.0
-heyoo==0.0.8
-flask ==2.2.3
-langchain== 0.0.136
-llama_index==0.5.11
+python-dotenv==1.0.0
+heyoo==0.1.0
+fastapi ==0.99.1
+uvicorn==0.22.0
+langchain== 0.0.245
+requests>=2.31.0
+unstructured==0.10.5
+faiss-cpu==1.7.4

@@ -54,9 +54,9 @@ Lets make `.env` file in our `whatsapp-bot-from-document` to hold our environmen
 Open your `whatsapp-bot-from-document`, add file and add your credentials.
 
     ```text
-    openai_key      ="your openAI API key"
-    phone_number_id = "Your whatsapp phone number ID"
-    whatsapp_token  = "Your whatsapp token"
+    OPENAI-API-KEY      ="your openAI API key"
+    PHONE-NUMBER-ID = "Your whatsapp phone number ID"
+    WHATSAPP-TOKEN  = "Your whatsapp token"
     ```
 
 ## Fire Up your project
@@ -65,9 +65,9 @@ Once you have environment variables set, you are ready to fire 🚀 your `main.p
 
 1. Fire up your python script
   
-    ```bash
+  ```bash
     python3 main.py
-    ```
+  ```
   
 2. Start ngrok
 
@@ -115,7 +115,8 @@ After veryfing and saving whatsapp webook, navigate to webhook fields --> click 
 
 Here is our basic project structure. Please upload your documents in `documents` folder before firing the project.
 
-```bash
+```text
+
 └── Whatsapp bot
     └── mybot(virtual env)
     └── whatsapp-bot-from-document
